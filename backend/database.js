@@ -23,7 +23,7 @@ const dbinitialize = async () => {
 }
 
 const readTeachers = async () => {
-    const sql = `SELECT * FROM dummyData`
+    const sql = SELECT * from teacher  
     return new Promise((resolve, reject) => {
         knex_db
             .raw(sql)
@@ -32,7 +32,7 @@ const readTeachers = async () => {
             })
             .catch((error) => {
                 reject(error);
-            });
+            });teacher  
     });
 }
 
